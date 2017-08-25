@@ -3,10 +3,10 @@ Bo Yang, Hongkai Wen, Sen Wang, Ronald Clark, Andrew Markham, Niki Trigoni. In I
 
 ![Teaser_Image](https://github.com/Yang7879/3D-RecGAN/blob/master/3d_recgan_sample.png)
 
-### Data
+## Data
 [Google Drive](https://drive.google.com/drive/folders/0B4LOSo26CrtjXzB2TDdHOXZqTlk)
 
-### Requirements
+## Requirements
 python 2.7
 
 tensorflow 1.1.0
@@ -15,10 +15,10 @@ numpy 1.12.1
 
 scipy 0.19.0
 
-### Run
+## Run
 python main_3D-RecGAN.py
 
-### Citation
+## Citation
 If you use the paper, code or data for your research, please cite:
 ```
 @inProceedings{Yang17,
