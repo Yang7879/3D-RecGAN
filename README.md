@@ -8,8 +8,11 @@ Bo Yang, Hongkai Wen, Sen Wang, Ronald Clark, Andrew Markham, Niki Trigoni. In I
 
 ### Requirements
 python 2.7
+
 tensorflow 1.1.0
+
 numpy 1.12.1
+
 scipy 0.19.0
 
 ### Run
