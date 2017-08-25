@@ -6,6 +6,9 @@ Bo Yang, Hongkai Wen, Sen Wang, Ronald Clark, Andrew Markham, Niki Trigoni. In I
 ### Data
 [Google Drive](https://drive.google.com/drive/folders/0B4LOSo26CrtjXzB2TDdHOXZqTlk)
 
+### Run
+python main_3D-RecGAN.py
+
 ### Citation
 If you use the paper, code or data for your research, please cite:
 ```
