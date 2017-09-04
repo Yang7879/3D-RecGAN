@@ -143,7 +143,7 @@ class Network:
             sum_gan_d_loss = tf.summary.scalar('gan_d_loss',gan_d_loss)
             alpha = tf.random_uniform(shape=[batch_size,resolution**3],minval=0.0,maxval=1.0)
 
-            Y_pred_ = tf.reshape(Y,shape=[batch_size,-1])
+            Y_pred_ = tf.reshape(Y_pred,shape=[batch_size,-1])
             differences_ = Y_pred_ -Y_
             interpolates = Y_ + alpha*differences_
             with tf.variable_scope('dis',reuse=True):
