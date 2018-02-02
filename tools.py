@@ -192,7 +192,6 @@ class Data:
         X_test_batch, Y_test_batch = self.load_X_Y_voxel_grids(X_test_files_batch, Y_test_files_batch)
         return X_test_batch, Y_test_batch
 
-
 class Ops:
 
     @staticmethod

@@ -12,28 +12,14 @@ GPU0 = '1'
 config={}
 config['train_names'] = ['chair']
 for name in config['train_names']:
-    config['X_train_'+name] = '/home/yang/Data/3D-RecGAN_Data/'+name+'/train_25d/voxel_grids_64/'
-    config['Y_train_'+name] = '/home/yang/Data/3D-RecGAN_Data/'+name+'/train_3d/voxel_grids_64/'
+    config['X_train_'+name] = './Data/'+name+'/train_25d/voxel_grids_64/'
+    config['Y_train_'+name] = './Data/'+name+'/train_3d/voxel_grids_64/'
 config['test_names']=['chair']
 for name in config['test_names']:
-    config['X_test_'+name] = '/home/yang/Data/3D-RecGAN_Data/'+name+'/test_25d/voxel_grids_64/'
-    config['Y_test_'+name] = '/home/yang/Data/3D-RecGAN_Data/'+name+'/test_3d/voxel_grids_64/'
+    config['X_test_'+name] = './Data/'+name+'/test_25d/voxel_grids_64/'
+    config['Y_test_'+name] = './Data/'+name+'/test_3d/voxel_grids_64/'
 config['resolution'] = resolution
 config['batch_size'] = batch_size
-################################################################
-
-###############################################################
-config_Dell={}
-config_Dell['train_names'] = ['chair']
-for name in config_Dell['train_names']:
-    config_Dell['X_train_'+name] = '/media/disk5/yang/Data/3D-RecGAN_Data/'+name+'/train_25d/voxel_grids_64/'
-    config_Dell['Y_train_'+name] = '/media/disk5/yang/Data/3D-RecGAN_Data/'+name+'/train_3d/voxel_grids_64/'
-config_Dell['test_names']=['chair']
-for name in config_Dell['test_names']:
-    config_Dell['X_test_'+name] = '/media/disk5/yang/Data/3D-RecGAN_Data/'+name+'/test_25d/voxel_grids_64/'
-    config_Dell['Y_test_'+name] = '/media/disk5/yang/Data/3D-RecGAN_Data/'+name+'/test_3d/voxel_grids_64/'
-config_Dell['resolution'] = resolution
-config_Dell['batch_size'] = batch_size
 ################################################################
 
 class Network:
