@@ -160,7 +160,7 @@ class Network:
             ae_g_optim = tf.train.AdamOptimizer(learning_rate=lr, beta1=0.9, beta2=0.999, epsilon=1e-8).minimize(ae_gan_g_loss, var_list=ae_var)
             dis_optim = tf.train.AdamOptimizer(learning_rate=lr,beta1=0.9,beta2=0.999,epsilon=1e-8).minimize(gan_d_loss_gp,var_list=dis_var)
 
-        print tools.Ops.variable_count()
+      
         sum_merged = tf.summary.merge_all()
 
         saver = tf.train.Saver(max_to_keep=1)
@@ -210,7 +210,7 @@ class Network:
                     #### model saving
                     if i %500==0 and i>0 and epoch % 1 == 0:
                         saver.save(sess, save_path=self.train_mod_dir +'model.cptk')
-                        print "epoch:", epoch, " i:", i, " model saved!"
+                        print ("epoch:", epoch, " i:", i, " model saved!")
 
 if __name__ == "__main__":
     data = tools.Data(config)
